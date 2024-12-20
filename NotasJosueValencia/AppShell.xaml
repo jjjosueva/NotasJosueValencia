@@ -7,12 +7,12 @@
 
     <FlyoutItem Title="Josue Valencia Notas" FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
-            Title="Página de Notas"
-            ContentTemplate="{DataTemplate views:AllNotesJVPage}"
-            Icon="icon_notes.png" />
-        <ShellContent
             Title="Acerca de mí"
             ContentTemplate="{DataTemplate views:AboutJVPage}"
             Icon="icon_about.png" />
+        <ShellContent
+            Title="Página de Notas"
+            ContentTemplate="{DataTemplate views:AllNotesJVPage}"
+            Icon="icon_notes.png" />
     </FlyoutItem>
 </Shell>
