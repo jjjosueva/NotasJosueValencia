@@ -12,7 +12,7 @@
                HorizontalOptions="Center"
                TextColor="Black" />
 
-        <Label Text="Soy desarrollador de software y me apasiona la tecnología"
+        <Label Text="Soy Estudiante de Software y me gusta todo en general"
                FontSize="18"
                HorizontalOptions="Center"
                TextColor="DarkGray" />
