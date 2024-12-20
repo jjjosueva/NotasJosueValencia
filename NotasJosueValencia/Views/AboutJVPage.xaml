@@ -17,7 +17,7 @@
                HorizontalOptions="Center"
                TextColor="DarkGray" />
 
-        <Image Source="imagen1.jpg"
+        <Image Source="imagen1.png"
                HeightRequest="200"
                WidthRequest="200"
                HorizontalOptions="Center" />
