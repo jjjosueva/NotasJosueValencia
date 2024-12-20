@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="NotasJosueValencia.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:NotasJosueValencia"
-    Shell.FlyoutBehavior="Flyout"
-    Title="NotasJosueValencia">
+<Shell x:Class="NotasJosueValencia.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:NotasJosueValencia.Views"
+       FlyoutBehavior="Flyout">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <FlyoutItem Title="Josue Valencia Notas" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+            Title="Página de Notas"
+            ContentTemplate="{DataTemplate views:AllNotesJVPage}"
+            Icon="icon_notes.png" />
+        <ShellContent
+            Title="Acerca de mí"
+            ContentTemplate="{DataTemplate views:AboutJVPage}"
+            Icon="icon_about.png" />
+    </FlyoutItem>
 </Shell>

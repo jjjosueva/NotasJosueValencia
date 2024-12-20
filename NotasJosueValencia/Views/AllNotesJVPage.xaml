@@ -5,7 +5,7 @@
              Title="Notas Josue Valencia"
              NavigatedTo="ContentPage_NavigatedTo">
     <ContentPage.BindingContext>
-        <viewModels:NotesViewModel />
+        <viewModels:NotesJVViewModel />
     </ContentPage.BindingContext>
 
     <!-- Add an item to the toolbar -->
