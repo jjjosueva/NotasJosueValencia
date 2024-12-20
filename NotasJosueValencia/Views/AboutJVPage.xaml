@@ -3,23 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotasJosueValencia.Views.AboutJVPage"
              Title="Sobre Mí"
-             BackgroundColor="White">
+             BackgroundColor="#F0F0F0">
 
-    <VerticalStackLayout Spacing="20" Padding="20" HorizontalOptions="Center">
-        <Label Text="Hola, mi nombre es Josue Valencia"
-               FontSize="24"
-               FontAttributes="Bold"
-               HorizontalOptions="Center"
-               TextColor="Black" />
+    <ScrollView>
+        <VerticalStackLayout Spacing="30" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+            <!-- Título -->
+            <Label Text="¡Hola, soy Josue Valencia!"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"
+                   LineHeight="1.2" />
 
-        <Label Text="Soy Estudiante de Software y me gusta todo en general"
-               FontSize="18"
-               HorizontalOptions="Center"
-               TextColor="DarkGray" />
+            <!-- Descripción -->
+            <Label Text="Soy Estudiante de Software y me apasiona el desarrollo de aplicaciones. Me gusta explorar nuevas tecnologías y aprender constantemente."
+                   FontSize="18"
+                   HorizontalOptions="Center"
+                   TextColor="#555555"
+                   LineHeight="1.5"
+                   Padding="10,0" />
 
-        <Image Source="imagen1.png"
-               HeightRequest="200"
-               WidthRequest="200"
-               HorizontalOptions="Center" />
-    </VerticalStackLayout>
+            <!-- Imagen -->
+            <Image Source="imagen1.png"
+                   HeightRequest="250"
+                   WidthRequest="250"
+                   Aspect="AspectFill"
+                   HorizontalOptions="Center" />
+
+            <!-- Texto adicional -->
+            <Label Text="¡Gracias por visitar mi página de notas!"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   TextColor="#888888"
+                   Padding="10,0" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
